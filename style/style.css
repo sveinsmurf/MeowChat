@@ -19,12 +19,19 @@ nav a {
 }
 
 .chatgrid {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: blue;
+    padding-top: 30px;
+    gap: 15px;
+    row-gap: 25px;
 }
 
 .chatgrid div {
-    margin: 10px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 90%;
+    height: 300px;
+    margin: auto;
     padding: 10px;
 }
